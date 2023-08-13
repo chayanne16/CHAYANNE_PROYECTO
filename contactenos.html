@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+
+                    <img src="./img/logo.png" alt="">
+            </li>
+            <li><a href="./index.html"> inicio </a></li>
+            <li> <a href="./contactenos.html"> contactenos </a></li>
+            <!--<a href="#"> Materias</a></li>--> 
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1> Formulario Personajes de CHAYANNE FUENTES </h1>
+        <div>
+            <form action="" method="post">
+                <div class="section-flex">
+                    <div class="element-form">
+                        <div>
+                            <label for="type"> Tipo de Mensaje</label>
+                        </div>
+                        <select name="type" id="type"> 
+                            <option value="">Seleccione una opcion </option>
+                            <option value="Cotizacion"> Cotizacion </option>
+                            <option value="Saludo"> Saludo </option>
+                            <option value="Queja"> Queja </option>
+                        </select>
+                    </div>
+
+                    <div class="element-form">
+                        <div class="label">
+                            <label for="name"> Nombres</label>
+                        </div>
+                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo">
+                    </div>
+
+                    <div class="element-form">
+                        <div class="label">
+                            <label for="Email"> Email</label>
+                        </div>
+                        <input type="text" name="Email" id="Email" placeholder="Example: fchayanne364gmail.com">
+                    </div>
+                    
+                    <div class="element-form">
+                        <div class="label">
+                            <label for="Phone"> Celular</label>
+                        </div>
+                        <input type="Phone" name="Phone" id="Celular" placeholder="Ingrese su celular">
+                    </div>
+
+                    <div class="element-form">
+                        <div class="label">
+                            <label for="coment"> Comentario</textarea>
+                        </div>
+                        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Ingrese un comentario"></textarea>
+                    </div>
+
+                    <div class="btn-div">
+                        <button type="submit" onclick="validaciondatos()"> Enviar Datos </button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p> BY: CHAYANNE FUENTES </p>
+    </footer>
+
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
